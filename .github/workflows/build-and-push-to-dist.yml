@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout from the 'master' branch
+      - name: "Checkout from the 'master' branch"
         uses: actions/checkout@v2
 
       - name: Setting Node.js and Yarn up
@@ -35,7 +35,7 @@ jobs:
       - name: Building the CSS
       - run: yarn build
 
-      - name: Commit to the 'dist' branch
+      - name: "Commit to the 'dist' branch"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional but recommended
