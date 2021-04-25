@@ -27,3 +27,4 @@ exports.css = () => {
     .pipe(concat("all.css"))
     .pipe(gulp.dest("dist/"));
 };
+exports.default = exports.css;

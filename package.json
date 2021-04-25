@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "gulp"
+  },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.1",
