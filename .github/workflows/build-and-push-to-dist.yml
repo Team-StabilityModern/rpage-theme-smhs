@@ -36,6 +36,9 @@ jobs:
       - name: Building the CSS
         run: yarn build
 
+      - name: debug - git diff
+        run: git diff
+
       - name: "Commit to the 'dist' branch"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
