@@ -39,11 +39,11 @@ jobs:
       - name: Building the CSS
         run: yarn build
 
-      - name: "Commit to the 'master' branch"
+      - name: "Commit to the 'dist' branch"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional but recommended
           # Defaults to "Apply automatic changes"
-          commit_message: "dist(): update the dist"
+          commit_message: "dist(): built"
           branch: dist
           push_options: '--force'
