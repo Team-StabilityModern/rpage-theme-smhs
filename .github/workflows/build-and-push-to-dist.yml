@@ -36,15 +36,11 @@ jobs:
       - name: Building the CSS
         run: yarn build
 
-      - name: debug - git diff
-        run: git diff
-
-      - name: "Commit to the 'dist' branch"
+      - name: "Commit to the 'master' branch"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional but recommended
           # Defaults to "Apply automatic changes"
           commit_message: "dist(): update the dist to $GITHUB_SHA"
-          branch: dist
           commit_options: '--no-verify'
           push_options: '--force'
