@@ -1,0 +1,15 @@
+{
+  "name": "rpage-theme-smhs",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.2.12",
+    "precss": "^4.0.0"
+  }
+}
