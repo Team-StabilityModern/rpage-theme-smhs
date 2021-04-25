@@ -25,6 +25,9 @@ jobs:
       - name: "Checkout from the 'master' branch"
         uses: actions/checkout@v2
 
+      - name: "Checkout to 'dist' branch"
+        run: git switch -c dist
+
       - name: Setting Node.js and Yarn up
         uses: actions/setup-node@v2
         with:
@@ -42,3 +45,5 @@ jobs:
           # Optional but recommended
           # Defaults to "Apply automatic changes"
           commit_message: "dist(): update the dist"
+          branch: dist
+          push_options: '--force'
