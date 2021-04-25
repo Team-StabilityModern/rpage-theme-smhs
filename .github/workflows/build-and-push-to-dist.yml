@@ -43,4 +43,5 @@ jobs:
           # Defaults to "Apply automatic changes"
           commit_message: "dist(): update the dist to $GITHUB_SHA"
           branch: dist
+          commit_options: '--no-verify'
           push_options: '--force'
